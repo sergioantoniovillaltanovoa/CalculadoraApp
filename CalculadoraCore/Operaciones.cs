@@ -7,42 +7,42 @@ using System.Threading.Tasks;
 namespace CalculadoraCore
 {
     
-    public static class Operaciones
+    public static class Operaciones // Clase estática que contiene métodos para realizar operaciones matemáticas básicas
     {
-        // usando ref para actualizar el valor
-        public static void Sumar(ref double resultado, double numero)
+
+        public static void Sumar(ref double resultado, double numero) // Método para sumar un número al resultado actual
         {
-            // Sumar un número al resultado actual
-            resultado += numero;
+
+            resultado += numero; // Sumar un número al resultado actual
         }
-        // Método para restar, usando ref para actualizar el valor
-        public static void Restar(ref double resultado, double numero)
+    
+        public static void Restar(ref double resultado, double numero) // Método para restar un número del resultado actual
         {
-            // Restar un número al resultado actual
-            resultado -= numero;
+           
+            resultado -= numero; // Restar un número del resultado actual
         }
 
-        // usando out para devolver el resultado
-        public static void Multiplicar(double a, double b, out double resultado)
+
+        public static void Multiplicar(double a, double b, out double resultado) // Método para multiplicar dos números y devolver el resultado
         {
-            // Multiplicar dos números y devolver el resultado
-            resultado = a * b;
+            
+            resultado = a * b; // Multiplicar dos números y asignar el resultado a la variable de salida
         }
 
-        // Método para dividir, usando out para devolver el resultado y manejar división por cero
-        public static bool Dividir(double dividiendo, double divisor, out double resultado)
+        
+        public static bool Dividir(double dividiendo, double divisor, out double resultado) // Método para dividir dos números y devolver el resultado
         {
-            // Verificar si el divisor es cero antes de realizar la división
-            if (divisor == 0)
-            // Si el divisor es cero, no se puede realizar la división
+            
+            if (divisor == 0) // verificar si el divisor es cero
+
             {
-                resultado = 0;
-                return false; // Division por cero no permitida
+                resultado = 0; // Asignar cero al resultado si el divisor es cero
+                return false;  // Retornar false para indicar que la división no se pudo realizar
             }
-            else
+            else // Si el divisor no es cero
             {
-                resultado = dividiendo / divisor;
-                return true; // Division exitosa
+                resultado = dividiendo / divisor; // Realizar la división y asignar el resultado a la variable de salida
+                return true; // Retornar true para indicar que la división se realizó correctamente
             }
         }
     }
