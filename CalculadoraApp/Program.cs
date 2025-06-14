@@ -16,14 +16,17 @@ namespace CalculadoraAPP
             do
             // Bucle para mostrar el menú y realizar operaciones hasta que el usuario decida salir
             {
-                Console.WriteLine("----Calculadora UPN-----"); // Mostrar título de la calculadora
+                Console.WriteLine("----------------------------");
+                Console.WriteLine("   Calculadora UPN - C#     "); // Mostrar título de la calculadora
                 Console.WriteLine("----------------------------"); // Mostrar título de la calculadora
                 Console.WriteLine($"Valor actual: {valorActual}"); // Mostrar valor actual
-                Console.WriteLine("1. Sumar"); // Opción para sumar
-                Console.WriteLine("2. Restar");// Opción para restar
-                Console.WriteLine("3. Multiplicar"); // Opción para multiplicar
-                Console.WriteLine("4. Dividir"); // Opción para dividir
-                Console.WriteLine("5. Salir"); // Opción para salir de la calculadora
+                Console.WriteLine("----------------------------");
+                Console.WriteLine("1. Sumar                    "); // Opción para sumar
+                Console.WriteLine("2. Restar                   ");// Opción para restar
+                Console.WriteLine("3. Multiplicar              "); // Opción para multiplicar
+                Console.WriteLine("4. Dividir                  "); // Opción para dividir
+                Console.WriteLine("5. Salir                    "); // Opción para salir de la calculadora
+                Console.WriteLine("----------------------------");
                 Console.Write("Seleccione una opción: "); // Solicitar al usuario que seleccione una opción
                 
 
