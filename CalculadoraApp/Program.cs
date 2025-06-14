@@ -7,7 +7,7 @@ namespace CalculadoraAPP
     {
         static void Main() // Método principal que inicia la ejecución del programa
         {
-            double valorActual = 0; // Variable para almacenar el valor actual de la calculadora, inicializado en 0
+            double valorActual = 1; // Variable para almacenar el valor actual de la calculadora, inicializado en 0
 
 
             int opcion; // Variable para almacenar la opción seleccionada por el usuario
