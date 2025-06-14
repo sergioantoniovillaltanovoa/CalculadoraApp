@@ -95,6 +95,9 @@ namespace CalculadoraAPP
                         Console.WriteLine(" | - Estas en la opcion de resta |");
                         Console.WriteLine(" |                               |");
                         Console.WriteLine($" | - Tu resultado antiguo es : {valorActual} |"); // Mostrar valor actual
+                        Console.WriteLine(" |                               |");
+                        Console.WriteLine(" |-------------------------------|"); // Separador visual
+                        Console.WriteLine("                                  ");
                         Console.Write("Ingrese el numero para multiplicar por favor : "); // Solicitar al usuario que ingrese el factor
                         double factor = double.Parse(Console.ReadLine()); // Leer el factor ingresado por el usuario
                         Operaciones.Multiplicar(valorActual, factor, out double nuevoValor); // Llamar al método Multiplicar de la clase Operaciones, pasando el valor actual y el factor
