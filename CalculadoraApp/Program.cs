@@ -16,6 +16,7 @@ namespace CalculadoraAPP
             do
             // Bucle para mostrar el menú y realizar operaciones hasta que el usuario decida salir
             {
+                Console.Clear(); // Limpiar la consola para una mejor visualización
                 Console.WriteLine("----------------------------");
                 Console.WriteLine("   Calculadora UPN - C#     "); // Mostrar título de la calculadora
                 Console.WriteLine("----------------------------"); // Mostrar título de la calculadora
@@ -54,21 +55,29 @@ namespace CalculadoraAPP
                         Console.WriteLine($" | - Tu resultado antiguo es : {valorActual} |"); // Mostrar valor actual
                         Console.WriteLine(" |                               |");
                         Console.WriteLine(" |-------------------------------|"); // Mostrar título de la calculadora
-                        Console.Write("Ingrese un numero para sumar:  "); // Solicitar al usuario que ingrese un número para sumar
+                        Console.WriteLine("                                  ");
+                        Console.Write("Ingrese un numero para sumar por favor:  "); // Solicitar al usuario que ingrese un número para sumar
                         double sumando = double.Parse(Console.ReadLine()); // Leer el número ingresado por el usuario y convertirlo a un double
                         Operaciones.Sumar(ref valorActual, sumando); // Llamar al método Sumar de la clase Operaciones, pasando el valor actual por referencia y el número a sumar
                         break;
 
                     case 2: // restar (ref)
                         Console.Clear(); // Limpiar la consola para una mejor visualización
-                        Console.Write("Ingrese un numero para restar: "); // Solicitar al usuario que ingrese un número para restar
+                        Console.WriteLine(" |-------------------------------|");
+                        Console.WriteLine(" |   Calculadora UPN - C#        |"); // Mostrar título de la calculadora
+                        Console.WriteLine(" |-------------------------------|");
+                        Console.WriteLine(" |                               |");
+                        Console.WriteLine(" | - Estas en la opcion de resta |");
+                        Console.WriteLine(" |                               |");
+                        Console.WriteLine($" | - Tu resultado antiguo es : {valorActual} |"); // Mostrar valor actual
+                        Console.Write("Ingrese un numero para restar por favor : "); // Solicitar al usuario que ingrese un número para restar
                         double restando = double.Parse(Console.ReadLine()); // Leer el número ingresado por el usuario y convertirlo a un double
                         Operaciones.Restar(ref valorActual, restando); // Llamar al método Restar de la clase Operaciones, pasando el valor actual por referencia y el número a restar
                         break;
 
                     case 3: // multiplicar (out)
                         Console.Clear(); // Limpiar la consola para una mejor visualización
-                        Console.Write("Ingrese el factor: "); // Solicitar al usuario que ingrese el factor
+                        Console.Write("Ingrese el numero para multiplicar por favor : "); // Solicitar al usuario que ingrese el factor
                         double factor = double.Parse(Console.ReadLine()); // Leer el factor ingresado por el usuario
                         Operaciones.Multiplicar(valorActual, factor, out double nuevoValor); // Llamar al método Multiplicar de la clase Operaciones, pasando el valor actual y el factor
                         valorActual = nuevoValor; // Actualizar el valor actual con el resultado de la multiplicación
@@ -77,7 +86,7 @@ namespace CalculadoraAPP
 
                     case 4: // dividir (out) - CORREGIDO
                         Console.Clear(); // Limpiar la consola para una mejor visualización
-                        Console.Write("Ingrese el divisor: "); // Solicitar al usuario que ingrese el divisor
+                        Console.Write("Ingrese el numero para dividr porfavor : "); // Solicitar al usuario que ingrese el divisor
                         double divisor = double.Parse(Console.ReadLine()); // Leer el divisor ingresado por el usuario
 
                         // Verificar si el divisor es cero antes de realizar la división
@@ -89,7 +98,7 @@ namespace CalculadoraAPP
                         else // Si el divisor es cero, mostrar un mensaje de error
                         {
 
-                            Console.WriteLine("Error: Division por cero no permitida."); // Mostrar mensaje de error si el divisor es cero
+                            Console.WriteLine("Error amigo que pasa: La division por cero no permitida , no seas curioso porfavor  ."); // Mostrar mensaje de error si el divisor es cero
                         }
                         break;
 
