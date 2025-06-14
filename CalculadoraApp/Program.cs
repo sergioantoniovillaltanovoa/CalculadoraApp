@@ -115,6 +115,10 @@ namespace CalculadoraAPP
                         Console.WriteLine(" |                               |");
                         Console.WriteLine(" | -Ahora estan enopcion dividir |");
                         Console.WriteLine(" |                               |");
+                        Console.WriteLine($" | - Tu resultado antiguo es : {valorActual} |"); // Mostrar valor actual
+                        Console.WriteLine(" |                               |");
+                        Console.WriteLine(" |-------------------------------|"); // Separador visual
+                        Console.WriteLine("                                  ");
                         Console.Write("Ingrese el numero para dividr porfavor : "); // Solicitar al usuario que ingrese el divisor
                         double divisor = double.Parse(Console.ReadLine()); // Leer el divisor ingresado por el usuario
 
