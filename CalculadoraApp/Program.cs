@@ -21,18 +21,18 @@ namespace CalculadoraAPP
                 Console.WriteLine("----------------------------"); // Mostrar título de la calculadora
                 Console.WriteLine($"Valor actual: {valorActual}"); // Mostrar valor actual
                 Console.WriteLine("----------------------------"); // Separador visual
-                Console.WriteLine("|                            |");
-                Console.WriteLine("| 1. Sumar                   |"); // Opción para sumar
-                Console.WriteLine("|                            |");
-                Console.WriteLine("| 2. Restar                  |");// Opción para restar
-                Console.WriteLine("|                            |");
-                Console.WriteLine("| 3. Multiplicar             |"); // Opción para multiplicar
-                Console.WriteLine("|                            |");
-                Console.WriteLine("| 4. Dividir                 |"); // Opción para dividir
-                Console.WriteLine("|                            |");
-                Console.WriteLine("| 5. Salir                   |"); // Opción para salir de la calculadora
-                Console.WriteLine("|                            |"); // Separador visual
-                Console.WriteLine("|----------------------------|");
+                Console.WriteLine("|                          |");
+                Console.WriteLine("| 1. Sumar                 |"); // Opción para sumar
+                Console.WriteLine("|                          |");
+                Console.WriteLine("| 2. Restar                |");// Opción para restar
+                Console.WriteLine("|                          |");
+                Console.WriteLine("| 3. Multiplicar           |"); // Opción para multiplicar
+                Console.WriteLine("|                          |");
+                Console.WriteLine("| 4. Dividir               |"); // Opción para dividir
+                Console.WriteLine("|                          |");
+                Console.WriteLine("| 5. Salir                 |"); // Opción para salir de la calculadora
+                Console.WriteLine("|                          |"); // Separador visual
+                Console.WriteLine("|--------------------------|");
                 Console.Write("Seleccione una opción: "); // Solicitar al usuario que seleccione una opción
                 
 
@@ -45,7 +45,16 @@ namespace CalculadoraAPP
                 {
                     case 1: // sumar (ref)
                         Console.Clear(); // Limpiar la consola para una mejor visualización
-                        Console.Write("Ingrese un numero para sumar: "); // Solicitar al usuario que ingrese un número para sumar
+                        Console.WriteLine(" |-------------------------------|");
+                        Console.WriteLine(" |   Calculadora UPN - C#        |"); // Mostrar título de la calculadora
+                        Console.WriteLine(" |-------------------------------|");
+                        Console.WriteLine(" |                               |");
+                        Console.WriteLine(" | - Estas en la opcion de suma  |");
+                        Console.WriteLine(" |                               |");
+                        Console.WriteLine($" | - Tu resultado antiguo es : {valorActual} |"); // Mostrar valor actual
+                        Console.WriteLine(" |                               |");
+                        Console.WriteLine(" |-------------------------------|"); // Mostrar título de la calculadora
+                        Console.Write("Ingrese un numero para sumar:  "); // Solicitar al usuario que ingrese un número para sumar
                         double sumando = double.Parse(Console.ReadLine()); // Leer el número ingresado por el usuario y convertirlo a un double
                         Operaciones.Sumar(ref valorActual, sumando); // Llamar al método Sumar de la clase Operaciones, pasando el valor actual por referencia y el número a sumar
                         break;
