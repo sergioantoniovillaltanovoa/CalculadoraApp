@@ -1,0 +1,11 @@
+C:\Users\fox\source\repos\CalculadoraApp\CalculadoraApp\bin\Debug\CalculadoraApp.exe.config
+C:\Users\fox\source\repos\CalculadoraApp\CalculadoraApp\bin\Debug\CalculadoraApp.exe
+C:\Users\fox\source\repos\CalculadoraApp\CalculadoraApp\bin\Debug\CalculadoraApp.pdb
+C:\Users\fox\source\repos\CalculadoraApp\CalculadoraApp\bin\Debug\CalculadoraCore.dll
+C:\Users\fox\source\repos\CalculadoraApp\CalculadoraApp\bin\Debug\CalculadoraCore.pdb
+C:\Users\fox\source\repos\CalculadoraApp\CalculadoraApp\obj\Debug\CalculadoraApp.csproj.AssemblyReference.cache
+C:\Users\fox\source\repos\CalculadoraApp\CalculadoraApp\obj\Debug\CalculadoraApp.csproj.CoreCompileInputs.cache
+C:\Users\fox\source\repos\CalculadoraApp\CalculadoraApp\obj\Debug\Calculad.DE631C74.Up2Date
+C:\Users\fox\source\repos\CalculadoraApp\CalculadoraApp\obj\Debug\CalculadoraApp.exe
+C:\Users\fox\source\repos\CalculadoraApp\CalculadoraApp\obj\Debug\CalculadoraApp.pdb
+C:\Users\fox\source\repos\CalculadoraApp\CalculadoraApp\obj\Debug\CalculadoraApp.exe.config
