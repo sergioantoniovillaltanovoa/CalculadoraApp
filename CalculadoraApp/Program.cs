@@ -149,6 +149,14 @@ namespace CalculadoraAPP
                         Console.WriteLine(" |        Calculadora UPN - C#         |"); // Mostrar título de la calculadora
                         Console.WriteLine(" |-------------------------------------|");
                         Console.WriteLine(" | Gracias por utilizar la calculadora |"); // Agradecimiento al usuario
+                        Console.WriteLine(" |-------------------------------------|");
+                        Console.WriteLine(" |                                     |");
+                        Console.WriteLine(" |    Universidad Privada del Norte    |"); // Agradecimiento al usuario
+                        Console.WriteLine(" |                                     |");
+                        Console.WriteLine(" |                                     |");
+                        Console.WriteLine(" | * Curso :                           |");
+                        Console.WriteLine(" |   - Fundamentod de algoritmos       |");
+                        Console.WriteLine(" |                                     |");
                         Console.WriteLine("Saliendo de la calculadora..."); // Mensaje de salida
                         break;
 
