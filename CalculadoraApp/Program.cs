@@ -54,7 +54,7 @@ namespace CalculadoraAPP
                         Console.WriteLine(" |                               |");
                         Console.WriteLine($" | - Tu resultado antiguo es : {valorActual} |"); // Mostrar valor actual
                         Console.WriteLine(" |                               |");
-                        Console.WriteLine(" |-------------------------------|"); // Mostrar título de la calculadora
+                        Console.WriteLine(" |-------------------------------|"); // Separador visual
                         Console.WriteLine("                                  ");
                         Console.Write("Ingrese un numero para sumar por favor:  "); // Solicitar al usuario que ingrese un número para sumar
                         double sumando = double.Parse(Console.ReadLine()); // Leer el número ingresado por el usuario y convertirlo a un double
@@ -70,6 +70,9 @@ namespace CalculadoraAPP
                         Console.WriteLine(" | - Estas en la opcion de resta |");
                         Console.WriteLine(" |                               |");
                         Console.WriteLine($" | - Tu resultado antiguo es : {valorActual} |"); // Mostrar valor actual
+                        Console.WriteLine(" |                               |");
+                        Console.WriteLine(" |-------------------------------|"); // Separador visual
+                        Console.WriteLine("                                  ");
                         Console.Write("Ingrese un numero para restar por favor : "); // Solicitar al usuario que ingrese un número para restar
                         double restando = double.Parse(Console.ReadLine()); // Leer el número ingresado por el usuario y convertirlo a un double
                         Operaciones.Restar(ref valorActual, restando); // Llamar al método Restar de la clase Operaciones, pasando el valor actual por referencia y el número a restar
