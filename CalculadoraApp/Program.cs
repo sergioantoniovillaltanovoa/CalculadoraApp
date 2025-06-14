@@ -130,9 +130,11 @@ namespace CalculadoraAPP
                         }
                         else // Si el divisor es cero, mostrar un mensaje de error
                         {
-
-                            Console.WriteLine("Error amigo que pasa: La division por cero no permitida , no seas curioso porfavor  ."); // Mostrar mensaje de error si el divisor es cero
+                            Console.WriteLine("\n Error amigo que pasa: La division por cero no permitida , no seas curioso porfavor  ."); // Mostrar mensaje de error si el divisor es cero
+                            Console.WriteLine("Esta operacion matematica no esta bien  "); // Solicitar al usuario que presione una tecla para continuar
                         }
+                        Console.WriteLine("\n Presione una tecla para continuar..."); // Solicitar al usuario que presione una tecla para continuar
+                        Console.ReadKey(); // Esperar a que el usuario presione una tecla
                         break;
 
 
