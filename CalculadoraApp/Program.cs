@@ -61,6 +61,10 @@ namespace CalculadoraAPP
                         Operaciones.Sumar(ref valorActual, sumando); // Llamar al método Sumar de la clase Operaciones, pasando el valor actual por referencia y el número a sumar
                         break;
 
+
+
+
+
                     case 2: // restar (ref)
                         Console.Clear(); // Limpiar la consola para una mejor visualización
                         Console.WriteLine(" |-------------------------------|");
@@ -78,16 +82,26 @@ namespace CalculadoraAPP
                         Operaciones.Restar(ref valorActual, restando); // Llamar al método Restar de la clase Operaciones, pasando el valor actual por referencia y el número a restar
                         break;
 
+
+
+
+
                     case 3: // multiplicar (out)
                         Console.Clear(); // Limpiar la consola para una mejor visualización
                         Console.WriteLine(" |-------------------------------|");
                         Console.WriteLine(" |   Calculadora UPN - C#        |"); // Mostrar título de la calculadora
                         Console.WriteLine(" |-------------------------------|");
+                        Console.WriteLine(" |                               |");
+                        Console.WriteLine(" | - Estas en la opcion de resta |");
+                        Console.WriteLine(" |                               |");
+                        Console.WriteLine($" | - Tu resultado antiguo es : {valorActual} |"); // Mostrar valor actual
                         Console.Write("Ingrese el numero para multiplicar por favor : "); // Solicitar al usuario que ingrese el factor
                         double factor = double.Parse(Console.ReadLine()); // Leer el factor ingresado por el usuario
                         Operaciones.Multiplicar(valorActual, factor, out double nuevoValor); // Llamar al método Multiplicar de la clase Operaciones, pasando el valor actual y el factor
                         valorActual = nuevoValor; // Actualizar el valor actual con el resultado de la multiplicación
                         break;
+
+
 
 
                     case 4: // dividir (out) - CORREGIDO
@@ -108,6 +122,10 @@ namespace CalculadoraAPP
                         }
                         break;
 
+
+
+
+
                     // Salir de la calculadora
 
                     case 5:
@@ -115,6 +133,8 @@ namespace CalculadoraAPP
                         Console.WriteLine("Saliendo de la calculadora..."); // Mensaje de salida
                         Console.WriteLine("Gracias por utilizar la calculadora ..."); // Agradecimiento al usuario
                         break;
+
+
 
                     default:
                         Console.Clear(); // Limpiar la consola para una mejor visualización
