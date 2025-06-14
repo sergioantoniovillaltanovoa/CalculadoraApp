@@ -34,6 +34,8 @@ namespace CalculadoraAPP
                 Console.WriteLine("| 5. Salir                 |"); // Opción para salir de la calculadora
                 Console.WriteLine("|                          |"); // Separador visual
                 Console.WriteLine("|--------------------------|");
+                Console.WriteLine("                            ");
+                Console.WriteLine("                            ");
                 Console.Write("Seleccione una opción: "); // Solicitar al usuario que seleccione una opción
                 
 
@@ -165,15 +167,30 @@ namespace CalculadoraAPP
 
 
                     default:
-
-                        Console.clear(); // Limpiar la consola para una mejor visualización
+                        Console.Clear(); // Limpiar la consola para una mejor visualización
                         Console.WriteLine(" |-------------------------------------|");
-                        Console.WriteLine(" |        Calculadora UPN - C#         |");
+                        Console.WriteLine(" |        Calculadora UPN - C#         |"); // Mostrar título de la calculadora
                         Console.WriteLine(" |-------------------------------------|");
                         Console.WriteLine(" |                                     |");
-                        Console.WriteLine(" |       Opcion incorreacta amigo      |");
+                        Console.WriteLine(" |       Opcion incorreacta amigo      |"); // Mensaje de error si la opción no es válida
                         Console.WriteLine(" |                                     |");
-                        Console.WriteLine(" | * Porfavor verifique tus opciones:  |");
+                        Console.WriteLine(" | * Porfavor verifique tus opciones:  |"); // Mensaje de error si la opción no es válida
+                        Console.WriteLine(" |                                     |");
+                        Console.WriteLine(" | 1. Sumar                            |"); // Opción para sumar
+                        Console.WriteLine(" |                                     |");
+                        Console.WriteLine(" | 2. Restar                           |"); // Opción para restar
+                        Console.WriteLine(" |                                     |");
+                        Console.WriteLine(" | 3. Multiplicar                      |"); // Opción para multiplicar
+                        Console.WriteLine(" |                                     |");
+                        Console.WriteLine(" | 4. Dividir                          |"); // Opción para dividir
+                        Console.WriteLine(" |                                     |");
+                        Console.WriteLine(" | 5. Salir                            |"); // Opción para salir de la calculadora
+                        Console.WriteLine(" |                                     |"); // Separador visual
+                        Console.WriteLine(" |-------------------------------------|");
+                        Console.WriteLine("                                        ");
+                        Console.WriteLine("Presione una tecla para continuar..."); // Solicitar al usuario que presione una tecla para continuar
+                        Console.ReadKey(); // Esperar a que el usuario presione una tecla
+                        consola .Clear(); // Limpiar la consola para una mejor visualización
                         break;
                         
                 }
