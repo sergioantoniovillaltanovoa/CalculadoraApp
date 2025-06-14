@@ -109,6 +109,9 @@ namespace CalculadoraAPP
 
                     case 4: // dividir (out) - CORREGIDO
                         Console.Clear(); // Limpiar la consola para una mejor visualización
+                        Console.WriteLine(" |-------------------------------|");
+                        Console.WriteLine(" |   Calculadora UPN - C#        |"); // Mostrar título de la calculadora
+                        Console.WriteLine(" |-------------------------------|");
                         Console.Write("Ingrese el numero para dividr porfavor : "); // Solicitar al usuario que ingrese el divisor
                         double divisor = double.Parse(Console.ReadLine()); // Leer el divisor ingresado por el usuario
 
