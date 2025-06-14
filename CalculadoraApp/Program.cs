@@ -157,6 +157,7 @@ namespace CalculadoraAPP
                         Console.WriteLine(" | * Curso :                           |");
                         Console.WriteLine(" |   - Fundamentod de algoritmos       |");
                         Console.WriteLine(" |                                     |");
+                        Console.WriteLine(" |-------------------------------------|"); // Separador visual
                         Console.WriteLine("Saliendo de la calculadora..."); // Mensaje de salida
                         break;
 
