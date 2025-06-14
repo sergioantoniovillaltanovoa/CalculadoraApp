@@ -92,7 +92,7 @@ namespace CalculadoraAPP
                         Console.WriteLine(" |   Calculadora UPN - C#        |"); // Mostrar título de la calculadora
                         Console.WriteLine(" |-------------------------------|");
                         Console.WriteLine(" |                               |");
-                        Console.WriteLine(" | - Estas en la opcion de resta |");
+                        Console.WriteLine(" | - Ahora estas en  multiplicar |");
                         Console.WriteLine(" |                               |");
                         Console.WriteLine($" | - Tu resultado antiguo es : {valorActual} |"); // Mostrar valor actual
                         Console.WriteLine(" |                               |");
@@ -112,6 +112,9 @@ namespace CalculadoraAPP
                         Console.WriteLine(" |-------------------------------|");
                         Console.WriteLine(" |   Calculadora UPN - C#        |"); // Mostrar título de la calculadora
                         Console.WriteLine(" |-------------------------------|");
+                        Console.WriteLine(" |                               |");
+                        Console.WriteLine(" | -Ahora estan enopcion dividir |");
+                        Console.WriteLine(" |                               |");
                         Console.Write("Ingrese el numero para dividr porfavor : "); // Solicitar al usuario que ingrese el divisor
                         double divisor = double.Parse(Console.ReadLine()); // Leer el divisor ingresado por el usuario
 
