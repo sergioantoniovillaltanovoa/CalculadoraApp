@@ -158,14 +158,18 @@ namespace CalculadoraAPP
                         Console.WriteLine(" |   - Fundamentod de algoritmos       |");
                         Console.WriteLine(" |                                     |");
                         Console.WriteLine(" |-------------------------------------|"); // Separador visual
+                        Console.WriteLine("                                        ");
                         Console.WriteLine("Saliendo de la calculadora..."); // Mensaje de salida
                         break;
 
 
 
                     default:
-                        Console.Clear(); // Limpiar la consola para una mejor visualización
-                        Console.WriteLine("Opción no valida. Por favor, intente de nuevo."); // Mensaje de error si la opción no es válida
+
+                        Console.clear(); // Limpiar la consola para una mejor visualización
+                        Console.WriteLine(" |-------------------------------------|");
+                        Console.WriteLine(" |        Calculadora UPN - C#         |");
+                        Console.WriteLine(" |-------------------------------------|");
                         break;
                         
                 }
