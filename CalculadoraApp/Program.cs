@@ -170,6 +170,10 @@ namespace CalculadoraAPP
                         Console.WriteLine(" |-------------------------------------|");
                         Console.WriteLine(" |        Calculadora UPN - C#         |");
                         Console.WriteLine(" |-------------------------------------|");
+                        Console.WriteLine(" |                                     |");
+                        Console.WriteLine(" |       Opcion incorreacta amigo      |");
+                        Console.WriteLine(" |                                     |");
+                        Console.WriteLine(" | * Porfavor verifique tus opciones:  |");
                         break;
                         
                 }
