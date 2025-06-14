@@ -7,7 +7,7 @@ namespace CalculadoraAPP
     {
         static void Main() // Método principal que inicia la ejecución del programa
         {
-            double valorActual = 1; // Variable para almacenar el valor actual de la calculadora, inicializado en 0
+            double valorActual = 1; // Variable para almacenar el valor actual de la calculadora, inicializado en 1
 
 
             int opcion; // Variable para almacenar la opción seleccionada por el usuario
@@ -80,6 +80,9 @@ namespace CalculadoraAPP
 
                     case 3: // multiplicar (out)
                         Console.Clear(); // Limpiar la consola para una mejor visualización
+                        Console.WriteLine(" |-------------------------------|");
+                        Console.WriteLine(" |   Calculadora UPN - C#        |"); // Mostrar título de la calculadora
+                        Console.WriteLine(" |-------------------------------|");
                         Console.Write("Ingrese el numero para multiplicar por favor : "); // Solicitar al usuario que ingrese el factor
                         double factor = double.Parse(Console.ReadLine()); // Leer el factor ingresado por el usuario
                         Operaciones.Multiplicar(valorActual, factor, out double nuevoValor); // Llamar al método Multiplicar de la clase Operaciones, pasando el valor actual y el factor
